@@ -23,6 +23,7 @@ default_settings = {
     'SLACK_ERROR_REDIRECT_URL': '/',
 
     'SLACK_SCOPE': 'identify,read,post',
+    'SLACK_USER_SCOPE': 'identity.avatar,identity.basic,identity.email,identity.team',
 
     'SLACK_PIPELINES': [
         'django_slack_oauth.pipelines.log_request',

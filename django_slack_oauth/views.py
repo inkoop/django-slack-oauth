@@ -82,6 +82,7 @@ class SlackAuthView(RedirectView):
             'client_id': settings.SLACK_CLIENT_ID,
             'redirect_uri': self.request.build_absolute_uri(reverse('slack_auth')),
             'scope': settings.SLACK_SCOPE,
+            'user_scope': settings.SLACK_USER_SCOPE,
             'state': state,
         })
 

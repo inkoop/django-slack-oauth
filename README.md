@@ -50,6 +50,7 @@ To use Slack OAuth in your Django app, you'll need your `SLACK_CLIENT_ID` and `S
     SLACK_CLIENT_ID = os.environ.get('SLACK_CLIENT_ID')
     SLACK_CLIENT_SECRET = os.environ.get('SLACK_CLIENT_SECRET')
     SLACK_SCOPE = 'admin,bot'
+    SLACK_USER_SCOPE = 'identity.email'
     ```
     If you aren't sure what your scope should be, read more about [Slack OAuth Scopes](https://api.slack.com/docs/oauth-scopes).
 
